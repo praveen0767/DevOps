@@ -1,8 +1,8 @@
 const express = require('express');
 const app = express();
-
+const name = " PKSCODE"
 app.get('/', (req, res) => {
-  res.status(200).send('Hello World! Codetest');
+  res.send('Hello World!Helllo');
 });
 
-module.exports = app; // 👈 export ONLY the app
+module.exports = {app, name }; // 👈 export ONLY the app
