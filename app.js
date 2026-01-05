@@ -1,11 +1,8 @@
 const express = require('express');
 const app = express();
-const port = process.env.PORT || 3000;
 
-app.get('/',(req, res) => {
-    res.send('Hello World!Helllo');
-})
+app.get('/', (req, res) => {
+  res.status(200).send('Hello World!Helllo');
+});
 
-app.listen(port, () =>{
-    console.log(`Server is Running On Port ${port}`);
-})
+module.exports = app; // 👈 export ONLY the app
